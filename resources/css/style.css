@@ -20,6 +20,16 @@ h4 {
   color: #399bd1;
 }
 
+.image-container img {
+  opacity: 0.7;
+  transition: opacity 0.5s, transform 0.5s ;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
 /*navbar header rules to overwrite bootstrap*/
 .navbar-default .navbar-nav > .active > a {
   color: #399bd1;
@@ -117,13 +127,11 @@ h4 {
 
 /*featured projects section style rules*/
 .title {
-  color: red;
   padding-bottom: 1.4rem;
   padding-top: 2rem;
 }
 
 .featured-project {
-  border: red solid 1px;
   padding: 3.5rem;
 }
 
@@ -131,14 +139,12 @@ h4 {
 .house img {
   height: auto;
   width: 100%;
-  margin: 0rem;
-  padding: 0rem;
   border: red solid 1px;
-
 }
 
-.image-container {
+.house {
+  border: purple 2px solid;
   padding: 0rem;
-  border: pink 2px solid;
-
+  margin: 0rem;
+  overflow: hidden;
 }

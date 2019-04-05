@@ -48,7 +48,8 @@ h4 {
   nav li a {
    font-size: 1.1rem;
    font-weight: bold;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Open sans', sans-serif;
+   color: red;
 }
 
 /*jumbotron section style rules*/

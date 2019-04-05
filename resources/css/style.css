@@ -1,3 +1,4 @@
+/* universal style rules used to overwrite bootstrap*/
 html {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -21,12 +22,19 @@ h4 {
 li {
   line-height: 1.4;
 }
+
+/*navbar header rules to overwrite bootstrap*/
 .navbar-default .navbar-nav > .active > a {
   color: #399bd1;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
   color: #399bd1;
+}
+
+/*jumbotron section style rules*/
+.carousel {  /*to offset navbar and ensure that jumbotron displays entire image*/
+  top: 50px;
 }
 
 .jumbotron-bike {
@@ -49,12 +57,10 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 44rem;
+  justify-content: flex-start;
   background-size: cover;
-  background-position: center;
+  padding-top: 11.85rem;
 }
-
 
 .carousel .jumbotron h1 {
   font-family: 'Monoton', cursive;
@@ -76,6 +82,10 @@ li {
   width: 11.4rem;
   padding: 1.3rem;
   margin-top: 2.8rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
 }
 
 .jumbotron .btn-primary:hover {

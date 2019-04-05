@@ -1,42 +1,133 @@
+<!--GRACE-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Jumpstart</title>
-    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+<!-- favicon and google fonts -->
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
+
+
+<!-- reset.css + slick.css + bootstrap + style.css -->
+    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./resources/slick/slick/slick.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
   </head>
 
   <body>
+<!-- header section -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand">Jumpstart</a>
-        </div>
-
+      <div class="container-fluid">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Explore</a></li>
           <li><a href="none">Start a project</a></li>
-          <li><a href="none">About us</a></li>        
+          <li><a href="none">About us</a></li>
         </ul>
+        <img class="navbar-brand navbar-right collapse navbar-collapse" src="./resources/images/logo.png" alt="Jumpstart">
       </div>
     </nav>
 
+    <!-- Jumbotron section using slick plugin -->
+    <div class="carousel">
+      <div class="jumbotron jumbotron-duffel">
+        <h1>GET STARTED.</h1>
+        <p>What are you waiting for? Today's the day for your next big idea.</p>
+        <a href="#" class="btn btn-primary btn-large">Jump in</a>
+      </div>
+
+      <div class="jumbotron jumbotron-bike">
+        <h1>GET GOING.</h1>
+        <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+        <a href="#" class="btn btn-primary btn-large">Jump in</a>
+      </div>
+
+      <div class="jumbotron jumbotron-beer">
+        <h1>GET THINKING.</h1>
+        <p>Meet like-minded individuals who will help fuel your creative juices.</p>
+        <a href="#" class="btn btn-primary btn-large">Jump in</a>
+      </div>
+
+      <div class="jumbotron jumbotron-flowers">
+        <h1>GET CREATING.</h1>
+        <p>Stop overthinking projects and begin putting them out into the world.</p>
+        <a href="#" class="btn btn-primary btn-large">Jump in</a>
+      </div>
     </div>
 
 
+    <!-- Second Section: Featured Project is a column with 2 rows. second row has 3 columns in it -->
+    <div class="featured-projec† container-fluid">
+      <div class="row-one">
+        <h3>Featured project</h3>
+      </div>
+
+      <div class="row-two">
+        <div class="column">
+          <img src="" alt="Little red house">
+        </div>
+        <div class="column">
+          <h4>DeFrost: A Documentary</h4>
+          <span>by Leo De Firenze</span>
+          <span>DeFrost is a documentary about growing up in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing, her family, friends, pets, and eventual departure from a freezing valley in Northern Italy through beautiful cinematography and narration.</span>
+        </div>
+        <div class="column">
+          <h4 class="blue">Product Categories</h4>
+          <ul>
+            <li>Art</li>
+            <li>Books</li>
+            <li>Crystals</li>
+            <li>Design</li>
+            <li>Doodles</li>
+            <li>Deedlybobs</li>
+            <li>Farming</li>
+            <li>Gadgets</li>
+            <li>Hoverboards</li>
+            <li>Jams, Jellies, Etc.</li>
+            <li>Magazines</li>
+            <li>Plants</li>
+            <li>Snakes & Snake Equipment</li>
+            <li>Tables</li>
+            <li>Ventriliquist Figures</li>
+            <li>Yoyos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 
+  <!-- projects section (column with 2 rows. second row contains 3 columns) -->
+    <div class="container-fluid">
+      <div class="row-one">
+        <h3>Projects</h3>
+      </div>
+      <div class="row-two">
+        <div class="column-one">
+          <img src="" alt="Girl wearing tights">
+          <h5>The Right Tights</h5>
+          <span>by Riley Mae</span>
+          <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
+        </div>
+        <div class="column-two">
+          <img src="" alt="Living room">
+          <h5>Peppermint Smart Home</h5>
+          <span>by Brian McDonald</span>
+          <p></p>
 
+        </div>
+        <div class="column-three">
 
+        </div>
+
+      </div>
+
+    </div>
 
 <!--section with scripts for jquery, slick, and main.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./resources/slick/slick/slick.min.js"> </script>
     <script type="text/javascript" src="./resources/js/main.js"></script>
   </body>
 </html>

@@ -2,6 +2,7 @@
 html {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
 }
 
 h3 {
@@ -19,22 +20,37 @@ h4 {
   color: #399bd1;
 }
 
-li {
-  line-height: 1.4;
-}
-
 /*navbar header rules to overwrite bootstrap*/
 .navbar-default .navbar-nav > .active > a {
   color: #399bd1;
+  background-color: inherit;
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
   color: #399bd1;
+  background-color: inherit;
+}
+
+ .navbar-default .navbar-nav > a {
+  font-size: 2rem;
+}
+
+  nav li a {
+   font-size: 1.1rem;
+   font-weight: bold;
+   font-family: 'Open Sans', sans-serif;
 }
 
 /*jumbotron section style rules*/
 .carousel {  /*to offset navbar and ensure that jumbotron displays entire image*/
   top: 50px;
+  border: black 3px solid;
+  width: 100%;
+  height: 42rem;
+  display: flex;
+  padding: 0rem;
+  margin: 0rem;
+  border-radius: 0px;
 }
 
 .jumbotron-bike {
@@ -60,6 +76,9 @@ li {
   justify-content: flex-start;
   background-size: cover;
   padding-top: 11.85rem;
+  padding-bottom: 11.85rem;
+  height: auto;
+
 }
 
 .carousel .jumbotron h1 {
@@ -94,4 +113,32 @@ li {
 
 .jumbotron .btn-primary:active {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+/*featured projects section style rules*/
+.title {
+  color: red;
+  padding-bottom: 1.4rem;
+  padding-top: 2rem;
+}
+
+.featured-project {
+  border: red solid 1px;
+  padding: 3.5rem;
+}
+
+
+.house img {
+  height: auto;
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  border: red solid 1px;
+
+}
+
+.image-container {
+  padding: 0rem;
+  border: pink 2px solid;
+
 }

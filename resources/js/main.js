@@ -7,6 +7,7 @@ $(document).ready(function(){
    pauseOnHover: false,
    swipeToSlide: false,
    draggable: false,
-   pauseOnFocus: false
+   pauseOnFocus: false,
+   
   });
 });
